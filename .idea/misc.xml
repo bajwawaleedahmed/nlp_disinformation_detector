@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Black">
+    <option name="sdkName" value="Python 3.12 (nlp_disinformation_detector) (2)" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="c5cf9f6a-b79d-4e65-b13e-120db86b2564" />
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.12 (nlp_disinformation_detector) (2)" project-jdk-type="Python SDK" />
+</project>

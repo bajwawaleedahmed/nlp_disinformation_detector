@@ -1,0 +1,25 @@
+{
+  "entities": {
+    "IPCC": "Intergovernmental Panel on Climate Change",
+    "NASA": "National Aeronautics and Space Administration",
+    "UNEP": "United Nations Environment Programme",
+    "CO2": "Carbon dioxide, a greenhouse gas contributing to global warming",
+    "Methane": "A potent greenhouse gas with 25x the warming potential of CO2",
+    "Paris Agreement": "2015 international treaty to limit global warming to below 2\u00b0C",
+    "1.5\u00b0C": "Threshold identified to avoid the worst climate impacts",
+    "Sea-level rise": "Result of ice melt and ocean thermal expansion",
+    "Glaciers": "Losing mass globally due to warming",
+    "El Ni\u00f1o": "Periodic climate pattern that raises global temps",
+    "Fossil fuels": "Primary source of man-made greenhouse gases"
+  },
+  "facts": [
+    "Human activities have caused approximately 1.1\u00b0C of global warming.",
+    "CO2 concentrations exceeded 420 ppm in 2024.",
+    "The past 9 years were the warmest on record.",
+    "Sea levels are rising about 3.3 mm/year.",
+    "Paris Agreement seeks to limit warming to 1.5\u20132\u00b0C.",
+    "Glaciers have lost over 7 trillion tons of ice since 2000.",
+    "Climate change drives more frequent extreme weather.",
+    "Methane makes up 20% of anthropogenic emissions."
+  ]
+}
