@@ -3,7 +3,7 @@ import joblib
 
 # Paths
 features_path = "/home/chief/PycharmProjects/nlp_disinformation_detector/data/stage2_features_final.json"
-model_path = "/home/chief/PycharmProjects/nlp_disinformation_detector/src/models/stage2_best_model.pkl"
+model_path = "/home/chief/PycharmProjects/nlp_disinformation_detector/src/models/stage2_final_model.pkl"
 output_path = "/home/chief/PycharmProjects/nlp_disinformation_detector/data/stage2_predictions_submission.csv"
 
 # Load data and model

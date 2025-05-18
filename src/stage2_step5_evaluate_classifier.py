@@ -7,7 +7,7 @@ from pathlib import Path
 
 # Paths
 features_path = Path("/home/chief/PycharmProjects/nlp_disinformation_detector/data/stage2_features_final.json")
-model_path = Path("models/stage2_best_model.pkl")
+model_path = Path("models/stage2_final_model.pkl")
 
 # Load data and model
 with features_path.open("r", encoding="utf-8") as f:
