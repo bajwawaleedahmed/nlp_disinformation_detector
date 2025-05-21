@@ -1,17 +1,16 @@
-import json
-import spacy
-from textblob import TextBlob
-import textstat
-from tqdm import tqdm
-from pathlib import Path
 from collections import Counter
+from textblob import TextBlob
+from pathlib import Path
+from tqdm import tqdm
+import textstat
+import spacy
+import json
 
-# Load full spaCy pipeline
 nlp = spacy.load("en_core_web_sm")
 
-# File paths
-input_path = Path("/home/chief/PycharmProjects/nlp_disinformation_detector/data/stage2_with_kbscore.json")
-output_path = Path("/home/chief/PycharmProjects/nlp_disinformation_detector/data/stage2_features_final.json")
+input_path = Path("/home/chief/PycharmProjects/nlp_disinformation_detector/data/processed/preprocessed_data_with_kb.json")
+output_path = Path("/home/chief/PycharmProjects/nlp_disinformation_detector/data/processed/preprocessed_data_with_features.json")
+
 
 def extract_features(article):
     text = article["text"]
@@ -56,13 +55,12 @@ def extract_features(article):
         "label": article["label"]
     }
 
-# Load and extract
-with input_path.open("r", encoding="utf-8") as infile:
-    articles = json.load(infile)
 
-features = [extract_features(a) for a in tqdm(articles)]
+def run_feature_extraction():
+    with open(input_path, "r", encoding="utf-8") as infile:
+        articles = json.load(infile)
 
-with output_path.open("w", encoding="utf-8") as outfile:
-    json.dump(features, outfile, indent=2)
+    features = [extract_features(a) for a in tqdm(articles)]
 
-print(f"✅ Final features with KB saved to {output_path}")
+    with open(output_path, "w", encoding="utf-8") as outfile:
+        json.dump(features, outfile, indent=2)
