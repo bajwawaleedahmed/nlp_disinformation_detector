@@ -60,7 +60,7 @@ def run_feature_extraction():
     with open(input_path, "r", encoding="utf-8") as infile:
         articles = json.load(infile)
 
-    features = [extract_features(a) for a in tqdm(articles)]
+    features = [extract_features(a) for a in tqdm(articles, desc="Extracting Features")]
 
     with open(output_path, "w", encoding="utf-8") as outfile:
         json.dump(features, outfile, indent=2)

@@ -20,8 +20,8 @@ def evaluate_predictions():
     report = classification_report(y_true, y_pred, digits=2)
     conf_matrix = confusion_matrix(y_true, y_pred)
 
-    print(f"✅ Accuracy: {accuracy * 100:.2f}%")
-    print("\n✅ Classification Report:")
+    print(f"Accuracy: {accuracy * 100:.2f}%")
+    print("\nClassification Report:")
     print(report)
-    print("✅ Confusion Matrix:")
+    print("Confusion Matrix:")
     print(conf_matrix)

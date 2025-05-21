@@ -25,3 +25,4 @@ def run_prediction():
     })
 
     submission.to_csv(output_path, index=False)
+    print("Prediction results generated")
