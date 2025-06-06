@@ -1,14 +1,5 @@
+from src.pipeline import data_cleaning, preprocessing, build_kb, extract_features, train_model, predict_model, evaluate_model
 from time import sleep
-
-from src.pipeline import (
-    data_cleaning,
-    preprocessing,
-    build_kb,
-    extract_features,
-    train_model,
-    predict_model,
-    evaluate_model,
-)
 
 
 def main():
